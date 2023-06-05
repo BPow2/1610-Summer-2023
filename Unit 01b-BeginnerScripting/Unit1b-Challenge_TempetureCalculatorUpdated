@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	
+	public void Main()
+	{
+		//asks user what the current temperature is in celsius
+		Console.WriteLine("What is the current tempurature? (in Celsius)");
+		int currentTemp = Convert.ToInt32(Console.ReadLine());
+		Temperature(currentTemp);
+		
+	}
+	
+	public void Temperature (int currentTemp) {
+		//checks to see if the current temp is less than or greater than 30
+	if (currentTemp > 30) {
+		Console.WriteLine("Don't forget to stay hydrated and avoid being in the sun for extended periods of time.");
+	} else if (currentTemp < 30 && currentTemp > 10 ){
+		Console.WriteLine("Wear a light jacket.");
+	} else if (currentTemp < 10) {
+		Console.WriteLine("Wear warm clothing.");
+	}
+	}}
