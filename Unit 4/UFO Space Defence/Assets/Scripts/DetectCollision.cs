@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
 {
+
+    public string powerUpTag = "PowerUp";
+
+    public string enemyTag = "Enemy";
+
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject); //Destroy this game object
-        Destroy(other.gameObject); //Destroy hit object
+        if (!other.CompareTag(powerUpTag) || !other.CompareTag(enemyTag))
+        {
+            Destroy(gameObject); //Destroy this game object
+            Destroy(other.gameObject); //Destroy hit object
+        }
     }
 }

@@ -5,21 +5,26 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject powerUp;
-    public bool stopSpawning = false;
-    public float spawnTime;
-    public float spawnDelay;
+
+    private float spawnRangeX = 50f;
+    private float spawnPosZ = 50f;
+
+    private float startDelay = 2f;
+    private float spawnInterval = 1.5f;
 
     void Start()
     {
-        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
+        InvokeRepeating("SpawnPowerUp", startDelay, spawnInterval);
     }
 
-    public void SpawnObject()
+    void Update()
     {
-        Instantiate(powerUp, transform.position, transform.rotation);
-        if (stopSpawning)
-        {
-            CancelInvoke("SpawnObject");
-        }
+
+    }
+
+    void SpawnPowerUp()
+    {
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Instantiate(powerUp, spawnPos, powerUp.transform.rotation);
     }
 }

@@ -44,7 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 245930aa125c9c04b95fbef687b2d8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 6866861391993775857, guid: 7c276d6746ccd2840a65d7bfd1f1a6c4, type: 3}
-  stopSpawning: 0
-  spawnTime: 1
-  spawnDelay: 3
+  powerUp: {fileID: 1658491361000851117, guid: b5630095d48b8744788b40b2de770821, type: 3}
