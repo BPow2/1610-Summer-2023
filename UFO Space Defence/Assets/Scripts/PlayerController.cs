@@ -14,6 +14,13 @@ public class PlayerController : MonoBehaviour
 
     public GameObject laserBolt;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     void Start()
     {
         
@@ -46,6 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             //Create lasterBolt at the blaster transform position
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
+            audioManager.PlaySFX(audioManager.laser);
         }
     }
 }

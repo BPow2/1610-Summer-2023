@@ -11,6 +11,13 @@ public class DetectCollision : MonoBehaviour
 
     public int sceneToLoad; // var for picking next scene
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void Start()
     {
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();//gets score manager
@@ -28,9 +35,11 @@ public class DetectCollision : MonoBehaviour
 
         if(other.CompareTag("Laser"))
         {
+
             scoreManager.IncreaseScore(scoreToGive); //increases score based on score to give
             Destroy(gameObject); // destroys this game object
             Destroy(other.gameObject); //destroys collided object
+            audioManager.PlaySFX(audioManager.UFO);
         }
     }
 }
