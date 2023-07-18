@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TextLabelBehaviour : MonoBehaviour
 {
     public Text label;
-    public DamageBoost damageBoost;
+    public FloatData dataObj;
 
     private void Start()
     {
@@ -17,6 +17,6 @@ public class TextLabelBehaviour : MonoBehaviour
 
     public void UpdateLabel ()
     {
-        label.text = damageBoost.damageBoost.ToString(CultureInfo.InvariantCulture);
+        label.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
 }
