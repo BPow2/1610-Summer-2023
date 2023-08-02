@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent (typeof(SpriteRenderer))]
+
 public class SpriteBehaviour : MonoBehaviour
 {
     private SpriteRenderer rendererObj;
@@ -10,8 +11,8 @@ public class SpriteBehaviour : MonoBehaviour
         rendererObj = GetComponent<SpriteRenderer>(); 
     }
 
-    public void ChangeRendererColor(ColorBehaviour obj)
+    public void ChangeRendererColor(ColorIDDataList obj)
     {
-        rendererObj.color = obj.value;
+        rendererObj.color = obj.currentColor.value;
     }
 }

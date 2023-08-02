@@ -308,7 +308,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   canRun: 0
-  counterNum: {fileID: 0}
+  counterNum: {fileID: 11400000, guid: 84adcea4ca6c48a499b7d2cbf158c85d, type: 2}
   seconds: 3
 --- !u!4 &1357583661
 Transform:
@@ -635,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3004df93ddb70694781bea8a7653ef0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: {fileID: 1956829593}
   startEvent:
     m_PersistentCalls:
       m_Calls: []

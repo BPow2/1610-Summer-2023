@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextLabelBehaviour : MonoBehaviour
 {
-    private Text label;
+    public Text label;
     public UnityEvent startEvent;
 
     private void Start()

@@ -59,10 +59,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CoRoutineBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Vector3Data.cs" />
+    <Compile Include="Assets\Scripts\Instancer.cs" />
     <Compile Include="Assets\Scripts\SpriteBehaviour.cs" />
+    <Compile Include="Assets\Scripts\ColorIDBehaviour.cs" />
     <Compile Include="Assets\Scripts\MatchBehaviour.cs" />
     <Compile Include="Assets\Scripts\ID.cs" />
+    <Compile Include="Assets\Scripts\ColorMatchBehaviour.cs" />
     <Compile Include="Assets\UnityActions\GameActionHandler.cs" />
+    <Compile Include="Assets\Scripts\ColorIDDataList.cs" />
+    <Compile Include="Assets\Scripts\Destory Behaviour.cs" />
+    <Compile Include="Assets\Scripts\Vectory3DataList.cs" />
     <Compile Include="Assets\Scripts\FloatData.cs" />
     <Compile Include="Assets\Scripts\DraggableBehaviour.cs" />
     <Compile Include="Assets\Scripts\IDContainerBehaviour.cs" />
