@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -9150197953672177750}
   - component: {fileID: 4177020872182348888}
   - component: {fileID: -7298404707029384607}
-  - component: {fileID: -5108201520058294750}
   - component: {fileID: -4925692981465507822}
+  - component: {fileID: 8057676614759632807}
   m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
@@ -163,35 +163,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-5108201520058294750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3872345955668258070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76ca65b3118f0fa41bb62c1973e8ddf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: b10215159ae53014bbb2d2d7be167cf4, type: 2}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 749894b304970824bafd98938de89c00, type: 2}
-        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-        m_MethodName: SetCurrentColorRandomly
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  colorIDDataListObj: {fileID: 11400000, guid: 749894b304970824bafd98938de89c00, type: 2}
 --- !u!114 &-4925692981465507822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +196,26 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8057676614759632807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3872345955668258070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c256015e919f234b9a4f98be018cadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: 749894b304970824bafd98938de89c00, type: 2}
